@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- icons CDN -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Mdbootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css">
+     <!-- stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Todo App</title>
+</head>
+<body>
+    
+    <section class="w-100 d-flex justify-content-center mt-5">
+          <div class="main_container d-flex justify-content-center align-items-center flex-column">
+               <h1 class="mb-4">JS Todo App</h1>
+
+               <!-- input box -->
+               <div class="inp_box w-100 d-flex justify-content-evenly">
+                     <input type="text"id="inp_val" placeholder="enter task">
+                     <button class="add_task">
+                        <ion-icon name="add"></ion-icon>
+                    </button>
+               </div>
+
+               <!-- Task box -->
+               <div class="task_box w-100 mt-5">
+                  <ul class="p-0">
+                    <li class="d-flex justify-content-between w-100">
+                        <!-- task -->
+                        <div class="tasktext">Be a frontend developer with advance JS</div>
+                        <!-- edit & delete button -->
+                        <div class="dropstart">
+                            <button type="button" class="dropdown-toggle" data-mdb-toggle="dropdown" aria-expanded="false">
+                              <ion-icon name="ellipsis-vertical"></ion-icon>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="mb-0 edit_btn"onclick="edit_task(event)">Edit</li>
+                                <li class="mb-0 del_btn" onclick="det_task(event)">Delete</li>
+                            </ul>
+                        </div>
+                    </li>
+                  </ul>
+               </div>
+
+          </div>
+    </section>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+<script src="./script.js"></script>
+
+</html>
