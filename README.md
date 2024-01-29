@@ -1,6 +1,6 @@
 # JavaScript TodoList
 This is a simple TodoList application built using HTML, CSS, and JavaScript. It allows users to add, delete, and mark tasks as completed, providing a straightforward way to manage daily tasks.
-[ToDoList](https://Jagrati1213.github.io/js-todolist/)
+[ToDoList](https://jagrati1213.github.io/task-maker/)
 
 ## Features
 - Add new tasks to the list
